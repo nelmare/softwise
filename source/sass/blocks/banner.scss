@@ -1,0 +1,167 @@
+.banner {
+  padding: 40px 0;
+  box-shadow: 0 0 5px 1px rgba(34, 60, 80, 0.2);
+  width: 80%;
+  font-style: normal;
+  font-weight: 400;
+  font-size: $fz-default;
+  line-height: 24px;
+  font-family: $ff-montserrat;
+  color: $color-default-tangaroa;
+  text-align: left;
+
+  @include vp-767 {
+    padding: 20px 0;
+  }
+}
+
+.banner__container {
+  padding: 0 40px;
+
+  @include vp-767 {
+    padding: 0 20px;
+  }
+}
+
+.banner h1 {
+  margin: 0;
+  font-size: 39px;
+  line-height: 45px;
+  color: $color-melon;
+  font-weight: 700;
+
+  @include vp-767 {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.banner__meta {
+  margin-bottom: 25px;
+}
+
+.banner__meta time {
+  font-size: 15px;
+  line-height: 21px;
+  color: $color-tangaroa-transparent3;
+}
+
+.banner p {
+  margin: 0;
+  font-size: $fz-default;
+  line-height: 25px;
+  margin-bottom: 30px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 21px;
+  }
+}
+
+.banner__list {
+  margin: 0;
+  padding: 0;
+  font-size: $fz-default;
+  line-height: 25px;
+  margin-bottom: 30px;
+  padding-left: 50px;
+
+  @include vp-767 {
+    font-size: 15px;
+    line-height: 21px;
+    padding-left: 30px;
+  }
+}
+
+.banner__list li {
+  margin-bottom: 10px;
+}
+
+.banner__list--features {
+  list-style: none;
+  padding-left: 30px;
+
+  @include vp-767 {
+    padding-left: 12px;
+  }
+}
+
+.banner__list--features li {
+  position: relative;
+  padding-left: 20px;
+}
+
+.banner__list--features li::before {
+  content: "";
+  position: absolute;
+  //top: 50%;
+  //transform: translateY(-50%);
+  top: 7px;
+  left: 0;
+  background-image: url("../img/svg/icon-tick.svg");
+  background-repeat: no-repeat;
+  width: 15px;
+  height: 15px;
+}
+
+.banner__wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+}
+
+.banner__image-wrapper {
+  width: 130px;
+  height: 100px;
+  margin-right: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $color-romance;
+  border-radius: 7px;
+
+  @include vp-767 {
+    margin-bottom: 20px;
+    margin-right: 0;
+    width: 150px;
+    height: 120px;
+  }
+}
+
+.banner__image-wrapper img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 7px;
+}
+
+.banner__button {
+  margin-right: 30px;
+  margin-left: 0;
+
+  @include vp-767 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+.banner span {
+  color: $color-tangaroa-transparent3;
+  text-transform: uppercase;
+}
+
+.banner p span {
+  color: $color-red;
+  text-transform: none;
+}
